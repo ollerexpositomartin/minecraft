@@ -1,0 +1,15 @@
+services:
+  minecraft:
+    environment:
+      FILE_NAME_SERVER: "forge-1.16.5-36.2.34"
+    build: . 
+    ports:
+      - "25565:25565"
+    volumes:
+    - world:/server/world
+    - ops:/server/ops.json
+    stdin_open: true
+    tty: true
+volumes:
+  world:
+  ops:
