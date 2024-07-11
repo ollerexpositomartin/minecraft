@@ -21,4 +21,4 @@ WORKDIR /server
 RUN java -jar forge.jar --installServer
 
 # Start the server
-CMD java -Xmx1024M -Xms1024M -jar ${FILE_NAME_SERVER}.jar --nogui
+CMD java -Xmx5120M -Xms5120M -jar ${FILE_NAME_SERVER}.jar --nogui
