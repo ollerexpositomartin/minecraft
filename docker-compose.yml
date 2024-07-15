@@ -1,5 +1,5 @@
 services:
-  minecraft:
+  server:
     environment:
       FILE_NAME_SERVER: "forge-1.16.5-36.2.34"
     build: . 
